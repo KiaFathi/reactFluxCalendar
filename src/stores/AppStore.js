@@ -8,12 +8,19 @@ var merge = require('react/lib/merge');
 var CHANGE_EVENT = 'change';
 
 var _data = {
-  todos: [
-    {text: 'Write a lightning talk'},
-    {text: 'Give a lightning talk'},
-    {text: 'Learn all the things'},
-    {text: 'Get a pet bulldog and name it meatball'}
-  ]
+  text: 'HI!',
+  calendarData: {
+    month: 'September',
+    year: '100ADBCEFG',
+    days: [
+      [,,,,,,1],
+      [2,3,4,5,6,7,8],
+      [9,10,11,12,13,14,15],
+      [16,17,18,19,20,21,22],
+      [23,24,25,26,27,28, 29],
+      [30,31]
+      ]
+  }
 };
 
 console.log(_data);
