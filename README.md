@@ -1,4 +1,4 @@
 reactFluxCalendar
 =================
 
-a calendar app in reactFlux
+A calendar in react and flux
