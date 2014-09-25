@@ -6,11 +6,6 @@ var React = require('react');
 var AppStore = require('../stores/AppStore');
 var AppActions = require('../actions/AppActions');
 
-
-//React Components
-var TodoList = require('./TodoList.jsx');
-var NewTodo = require('./NewTodo.jsx');
-
 function getAppState(){
   return AppStore.getData()
 };
@@ -34,14 +29,9 @@ var APP = React.createClass({
 
   
   render: function(){
-    var _this = this;
-    var TodoLists = _this.state.todos.map(function(item, index){
-      return <TodoList key={index} text={item.text}/>
-    });
     return (
       <div>
-        <NewTodo/>
-        {TodoLists}
+        APP
       </div>
       );
   }

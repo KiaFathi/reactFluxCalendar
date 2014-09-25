@@ -47,15 +47,6 @@ AppDispatcher.register(function(payload){
     var text = action.text + ' to Dispatcher to Store and back';
     _data.message = text;
   }
-  else if(action.actionType === AppConstants.UPDATE_ENTRY){
-    todos[action.key].text = 'Updated due to click' 
-  }
-  else if(action.actionType === AppConstants.DELETE_ENTRY){
-    todos.splice(action.key, 1);
-  }
-  else if(action.actionType === AppConstants.ADD_ENTRY){
-    todos.unshift({text: action.text});
-  }
 
   AppStore.emitChange();
 
