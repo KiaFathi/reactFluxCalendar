@@ -4,7 +4,6 @@ var React = require('react');
 
 //Flux Architecture Components
 var AppStore = require('../stores/AppStore');
-var AppActions = require('../actions/AppActions');
 
 //Components
 var Calendar = require('../components/Calendar.jsx');
