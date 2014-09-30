@@ -1,4 +1,4 @@
-'use strict';
+ 'use strict';
 var React = require('react');
 
 var CalendarWeek = require('./CalendarWeek.jsx');
@@ -17,7 +17,7 @@ var Calendar = React.createClass({
       <div>
         <strong>{Month}, {Year}</strong> 
         <table>
-          <CalendarWeek 
+          <CalendarWeek
             days={['Sun','Mon','Tue','Wed','Thu','Fri', 'Sat']}
           />
           {CalendarWeeks}

@@ -1,9 +1,11 @@
 'use strict';
 var React = require('react');
+var AppActions = require('../actions/AppActions.js');
 
 var CalendarDay = React.createClass({
   handleClick: function(){
-    alert('HI mom!');
+    console.log('Hi mom!');
+    AppActions.incrementDay(this.props.week, this.props.key);
   },
   render: function(){
     var day = this.props.day;

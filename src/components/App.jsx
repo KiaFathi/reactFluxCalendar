@@ -7,14 +7,19 @@ var AppStore = require('../stores/AppStore');
 
 //Components
 var Calendar = require('../components/Calendar.jsx');
+var GCal = require('../components/GCal.jsx');
 
 function getAppState(){
   return AppStore.getData()
 };
 
+function getGCalData(){
+  return AppStore.getGCalData();
+}
+
 var APP = React.createClass({
   getInitialState: function(){
-    return getAppState();
+    return getGCalData();
   },
 
   _onChange: function(){
@@ -32,7 +37,7 @@ var APP = React.createClass({
   render: function(){
     return (
       <div>
-        <Calendar calendarData={this.state.calendarData}/>
+        <GCal calendarData ={this.state}/> 
       </div>
       );
   }
